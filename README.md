@@ -14,6 +14,7 @@ This example covers the following :
 - Rest template integration with Ribbon
 
 To run this project
+
     mvn clean install
 
 then execute
