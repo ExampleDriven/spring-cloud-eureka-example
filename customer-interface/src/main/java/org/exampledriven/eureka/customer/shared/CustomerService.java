@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @FeignClient(CustomerService.SERVICE_NAME)
 public interface CustomerService {
 
-    String SERVICE_NAME = "customer-server";
+    String SERVICE_NAME = "customer-service";
 
     @RequestMapping(value = "/customer/{id}", method = RequestMethod.GET, produces = "application/json")
     Customer getCustomer(@PathVariable("id") int id);

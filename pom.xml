@@ -10,9 +10,9 @@
     <name>Spring cloud eureka example aggregator</name>
 	
 	<modules>
-		<module>customer-shared</module>
-		<module>customer-server</module>
-		<module>customer-client</module>
+		<module>customer-interface</module>
+		<module>customer-service</module>
+		<module>customer-client-service</module>
 		<module>eureka-server</module>
 	</modules>
 

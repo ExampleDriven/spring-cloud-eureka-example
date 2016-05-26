@@ -3,10 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <name>Customer Server</name>
+    <name>Customer Service</name>
     <groupId>org.exampledriven</groupId>
     <version>0.0.1-SNAPSHOT</version>
-    <artifactId>customer-server</artifactId>
+    <artifactId>customer-service</artifactId>
 
     <parent>
         <groupId>org.springframework.cloud</groupId>
@@ -24,7 +24,7 @@
     <dependencies>
         <dependency>
             <groupId>org.exampledriven</groupId>
-            <artifactId>customer-shared</artifactId>
+            <artifactId>customer-interface</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
