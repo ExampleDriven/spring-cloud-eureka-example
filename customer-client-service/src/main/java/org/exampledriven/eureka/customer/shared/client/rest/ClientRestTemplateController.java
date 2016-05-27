@@ -20,7 +20,7 @@ class ClientRestTemplateController {
     public Hint getCustomer(@PathVariable int id) {
 
         Customer customer = restTemplate.exchange(
-                "http://customer-server/customer/{id}",
+                "http://customer-service/customer/{id}",
                 HttpMethod.GET,
                 null,
                 new ParameterizedTypeReference<Customer>() {
