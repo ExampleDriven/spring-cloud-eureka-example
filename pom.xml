@@ -14,6 +14,7 @@
 		<module>customer-service</module>
 		<module>customer-client-service</module>
 		<module>eureka-server</module>
+		<module>hystrix dashboard</module>
 	</modules>
 
 </project>

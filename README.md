@@ -12,6 +12,8 @@ This example covers the following :
 - Ribbon
 - Feign
 - Rest template integration with Ribbon
+- Hystrix command and fallback
+- Hystrix dashboard
 
 To run this project
 
