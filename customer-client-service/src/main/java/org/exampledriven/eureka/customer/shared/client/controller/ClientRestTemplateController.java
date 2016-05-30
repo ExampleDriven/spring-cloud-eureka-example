@@ -1,4 +1,4 @@
-package org.exampledriven.eureka.customer.shared.client.rest;
+package org.exampledriven.eureka.customer.shared.client.controller;
 
 import org.exampledriven.eureka.customer.shared.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
