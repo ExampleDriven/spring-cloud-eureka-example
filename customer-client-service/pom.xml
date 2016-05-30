@@ -24,7 +24,7 @@
     <dependencies>
         <dependency>
             <groupId>org.exampledriven</groupId>
-            <artifactId>customer-shared</artifactId>
+            <artifactId>customer-interface</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
@@ -43,6 +43,12 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-feign</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.netflix.hystrix</groupId>
+            <artifactId>hystrix-javanica</artifactId>
+            <version>1.5.3</version>
         </dependency>
 
     </dependencies>
