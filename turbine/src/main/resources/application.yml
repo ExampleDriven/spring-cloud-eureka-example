@@ -1,11 +1,6 @@
 
 server:
-  port: ${vcap.application.port:9099}
-
-spring:
-  jpa:
-    generate-ddl: true
-
+  port: 8082
 
 eureka:
   client:
@@ -22,3 +17,9 @@ eureka:
   instance:
     hostname: ${APPLICATION_DOMAIN}
     nonSecurePort: 80
+
+
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: customer-client-service
