@@ -11,7 +11,8 @@ This example covers the following :
 - Eureka server
 - Ribbon with rest template
 - Feign client
-- Feign client with Hystrix fallback
+  - Hystrix fallback
+  - Inheritance
 
 To run this project
 
