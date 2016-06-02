@@ -22,3 +22,5 @@ eureka:
   instance:
     hostname: ${APPLICATION_DOMAIN}
     nonSecurePort: 80
+
+logging.level.org.exampledriven.eureka.customer.shared.CustomerClient: FULL

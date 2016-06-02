@@ -9,11 +9,9 @@ http://exampledriven.wordpress.com/TBD
 This example covers the following :
 
 - Eureka server
-- Ribbon
-- Feign
-- Rest template integration with Ribbon
-- Hystrix command and fallback
-- Hystrix dashboard
+- Ribbon with rest template
+- Feign client
+- Feign client with Hystrix fallback
 
 To run this project
 
@@ -23,8 +21,14 @@ then execute
 
     mvn spring-boot:run
 
-in the following directories in the following order
+in the all the below directories in the following order
 - eureka-server
 - customer-server
 - customer-client
 
+Test URLs :
+
+- Rest template example : http://localhost:9099/customer-client/1
+- Feign example : http://localhost:9099/customer-client-feign/1
+- Feign example with Hystrix fallback: http://localhost:9099/customer-client-feign/8
+- Eureka : http://localhost:8761/
