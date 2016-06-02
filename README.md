@@ -24,8 +24,8 @@ then execute
 
 in the all the below directories in the following order
 - eureka-server
-- customer-server
-- customer-client
+- customer-service
+- customer-client-service
 
 Test URLs :
 
