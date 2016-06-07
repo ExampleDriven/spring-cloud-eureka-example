@@ -1,26 +1,17 @@
-
 server:
-  port: ${vcap.application.port:9099}
-
-spring:
-  jpa:
-    generate-ddl: true
-
+  port: 9099
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${vcap.services.eureka-service.credentials.uri:http://127.0.0.1:8761}/eureka/
+      defaultZone: http://127.0.0.1:8761/eureka/
     healthcheck:
       enabled: true
     lease:
       duration: 5
----
-spring:
-  profiles: cloud
-eureka:
-  instance:
-    hostname: ${APPLICATION_DOMAIN}
-    nonSecurePort: 80
 
-logging.level.org.exampledriven.eureka.customer.shared.CustomerClient: FULL
+spring:
+  application:
+    name: customer-client-service
+
+logging.level.org.exampledriven.eureka.customer.shared.CustomerServiceFeignClient: FULL

@@ -1,25 +1,18 @@
-
 server:
-  port: ${vcap.application.port:9098}
-
-spring:
-  jpa:
-    generate-ddl: true
-
+  port: 9098
 
 eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
   client:
     serviceUrl:
-      defaultZone: ${vcap.services.eureka-service.credentials.uri:http://127.0.0.1:8761}/eureka/
+      defaultZone: http://127.0.0.1:8761/eureka/
     healthcheck:
       enabled: true
     lease:
       duration: 5
-    sdfsdf: 1
----
+
 spring:
-  profiles: cloud
-eureka:
-  instance:
-    hostname: ${APPLICATION_DOMAIN}
-    nonSecurePort: 80
+  application:
+    name: customer-service

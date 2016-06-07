@@ -3,7 +3,7 @@ package org.exampledriven.eureka.customer.shared;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CustomerClientFallback implements CustomerClient {
+public class CustomerServiceFeignClientFallback implements CustomerServiceFeignClient {
 
     @Override
     public Customer getCustomer(int id) {

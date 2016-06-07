@@ -1,23 +1,20 @@
-package org.exampledriven.eureka.customer.shared.client.controller;
+package org.exampledriven.eureka.customer.shared.client.client;
 
 import org.exampledriven.eureka.customer.shared.Customer;
+import org.exampledriven.eureka.customer.shared.client.controller.MessageWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-@RestController
-class ClientRestTemplateController {
+@Component
+public class CustomerServiceRestTemplateClient {
 
     @Autowired
     private RestTemplate restTemplate;
 
-    @RequestMapping(value = "/customer-client/{id}", method = RequestMethod.GET, produces = "application/json")
-    public Hint getCustomer(@PathVariable int id) {
+    public MessageWrapper<Customer> getCustomer(int id) {
 
         Customer customer = restTemplate.exchange(
                 "http://customer-service/customer/{id}",
@@ -27,7 +24,7 @@ class ClientRestTemplateController {
                 },
                 id).getBody();
 
-        return new Hint(customer, "server called using eureka with rest template");
+        return new MessageWrapper<>(customer, "server called using eureka with rest template");
 
     }
 

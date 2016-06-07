@@ -32,4 +32,4 @@ Test URLs :
 - Rest template example : http://localhost:9099/customer-client/1
 - Feign example : http://localhost:9099/customer-client-feign/1
 - Feign example with Hystrix fallback: http://localhost:9099/customer-client-feign/8
-- Eureka : http://localhost:8761/
+- Eureka server : http://localhost:8761/
