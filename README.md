@@ -4,7 +4,7 @@
 
 This is the source code for the blog post
 
-http://exampledriven.wordpress.com/TBD
+https://exampledriven.wordpress.com/2016/07/01/spring-cloud-eureka-ribbon-feign-example/
 
 This example covers the following :
 
