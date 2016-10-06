@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-class CustomerFeignController {
+public class CustomerFeignController {
 
     private static Logger logger = LoggerFactory.getLogger(CustomerFeignController.class);
 
