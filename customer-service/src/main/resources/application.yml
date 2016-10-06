@@ -16,3 +16,7 @@ eureka:
 spring:
   application:
     name: customer-service
+
+logging:
+  level:
+    org.exampledriven.eureka: DEBUG

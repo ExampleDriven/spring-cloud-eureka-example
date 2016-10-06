@@ -17,3 +17,4 @@ spring:
 logging:
   level:
     org.exampledriven.eureka.customer.shared.CustomerServiceFeignClient: FULL
+    org.exampledriven.eureka: DEBUG

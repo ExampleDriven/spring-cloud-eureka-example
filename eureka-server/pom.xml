@@ -11,9 +11,9 @@
     <description>Eureka Server</description>
 
     <parent>
-        <groupId>org.exampledriven</groupId>
-        <artifactId>spring-cloud-eureka-example</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.4.1.RELEASE</version>
     </parent>
 
     <dependencies>
@@ -22,6 +22,18 @@
             <artifactId>spring-cloud-starter-eureka-server</artifactId>
         </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Camden.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
