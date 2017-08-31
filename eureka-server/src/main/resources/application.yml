@@ -7,3 +7,7 @@ eureka:
     fetchRegistry: false
   server:
     enableSelfPreservation: false
+
+management:
+  security:
+    enabled: false

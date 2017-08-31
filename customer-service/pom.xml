@@ -10,7 +10,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.4.1.RELEASE</version>
+        <version>1.5.6.RELEASE</version>
     </parent>
 
     <packaging>jar</packaging>
@@ -44,7 +44,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Camden.RELEASE</version>
+                <version>Dalston.SR3</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
